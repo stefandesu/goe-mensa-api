@@ -107,7 +107,7 @@ Explanation:
 
 ### Sample Calls
 
-TODO
+- https://phpapp2.zvw.uni-goettingen.de/portlet_mensaplan/public/ajaxresponse/getgerichte?mensa=Zentralmensa&tag=morgen&preis=mit. Shows all dishes from Zentralmensa for the next day with prices for employees.
 
 ### Possible Additives
 
