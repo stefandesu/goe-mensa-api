@@ -81,9 +81,9 @@ Explanation:
 - `{meal_category}` is one of a few preset categories for each canteen, e.g. "Menü I" or "Menü II" for Zentralmensa.
 - `{price}` is the price in Euro with a comma as a decimal point.
 - `{price_type}` is one of `Studenten` (students), `Mitarbeiter` (employees), `Gäste` (guests).
-- `{meal_title}` is the name of the meal.
+- `{meal_title}` is the name of the meal (can be empty, e.g. for deserts).
 - `{meal_additives}` is a comma separated list of food additives (see further below for more information).
-- `{meal_description}` is the description and possible side dishes (sometimes with additives in brackets).
+- `{meal_description}` is the description and possible side dishes (sometimes with comma-separated additives in brackets). The side dishes are mostly separated by commas, but sometimes with an `oder` (or) for example if you can choose between different sauces.
 - `{meal_image}` is not an actual image of the meal, but one of these: 
   - empty
   - `<img src="/portlet_mensaplan/public/images/vegetarisch.gif">` (vegetarian/vegan)
