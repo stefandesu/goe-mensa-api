@@ -2,7 +2,7 @@
 
 This project aims to document and open up the API for the canteens at the University of Göttingen, Germany.
 
-- [ ] Document the official API* to get meal information for all canteens in Göttingen.
+- [ ] Document the official API* to get dishes for all canteens in Göttingen.
 - [ ] Create a Node.js wrapper around the API that returns proper JSON data.
 - [ ] Make it available as a npm package.
 
@@ -10,7 +10,15 @@ This is a supplementary project to my upcoming Göttingen Mensa Telegram bot.
 
 \* Unfortunately, there is no officially advertised API, but if you know where to look, you can find an API that returns a preformatted HTML table that can be parsed systematically.
 
-## "Official" API
+## Terms
+To avoid confusion (especially for myself), I'll define some terms here.
+
+- `mensa` (plural `mensen`) = canteen(s) (I believe even most English speaking students in Göttingen use mensa/mensen and it feels way more natural)
+- `dish`, `dishes` (also `side dishes`) (these are called `Gerichte` in the origin API)
+- `origin API` = the "official" API
+- `API` = the newly defined API wrapper
+
+## Origin API Documentation
 
 This API was found by exploring the official widget on https://ecampus.uni-goettingen.de (only available for students at University of Göttingen).
 
@@ -27,7 +35,7 @@ You can modify the response by adding `GET` parameters.
 
 All other parameters are optional:
 
-- `tag` (day). Has to be one of `heute` (today), `morgen` (tomorrow), `uebermorgen` (day after tomorrow). Defaults to `heute`. If the next day is a Sunday, `morgen` returns meals for Monday. There might be more options as the official website can show meals for the current and next week.
+- `tag` (day). Has to be one of `heute` (today), `morgen` (tomorrow), `uebermorgen` (day after tomorrow). Defaults to `heute`. If the next day is a Sunday, `morgen` returns meals for Monday. There might be more options as the official website can show dishes for the current and next week.
 - `preis` (price). Has to be one of `stu` (student), `mit` (employee), `gas` (guest). Defaults to `stu`.
 
 The following parameters can all have the values `true` or `false`. All default to `true`:
@@ -56,7 +64,7 @@ The following parameters can all have the values `true` or `false`. All default 
     <tr class="zeile_grau">{ or <tr>}
       <td class="spalte_kategorie">
         <div class="gericht_kategorie">
-          {meal_category}
+          {dish_category}
         </div>
         <div class="gericht_preis">
           {price} € für {price_type}
@@ -64,12 +72,12 @@ The following parameters can all have the values `true` or `false`. All default 
       </td>
       <td class="spalte_gericht">
         <div class="gericht_titel">
-          {meal_title} ({meal_additives})
+          {dish_title} ({dish_additives})
         </div>
-        {meal_description}
+        {dish_description}
       </td>
       <td class="spalte_bild">
-        {meal_image}
+        {dish_image}
       </td>
     </tr>
     {...}
@@ -78,13 +86,13 @@ The following parameters can all have the values `true` or `false`. All default 
 ```
 Explanation:
 
-- `{meal_category}` is one of a few preset categories for each canteen, e.g. "Menü I" or "Menü II" for Zentralmensa.
+- `{dish_category}` is one of a few preset categories for each canteen, e.g. "Menü I" or "Menü II" for Zentralmensa.
 - `{price}` is the price in Euro with a comma as a decimal point.
 - `{price_type}` is one of `Studenten` (students), `Mitarbeiter` (employees), `Gäste` (guests).
-- `{meal_title}` is the name of the meal (can be empty, e.g. for deserts).
-- `{meal_additives}` is a comma separated list of food additives (see further below for more information).
-- `{meal_description}` is the description and possible side dishes (sometimes with comma-separated additives in brackets). The side dishes are mostly separated by commas, but sometimes with an `oder` (or) for example if you can choose between different sauces.
-- `{meal_image}` is not an actual image of the meal, but one of these: 
+- `{dish_title}` is the name of the dish (can be empty, e.g. for deserts).
+- `{dish_additives}` is a comma separated list of food additives (see further below for more information).
+- `{dish_description}` is the description and possible side dishes (sometimes with comma-separated additives in brackets). The side dishes are mostly separated by commas, but sometimes with an `oder` (or) for example if you can choose between different sauces.
+- `{dish_image}` is not an actual image of the meal, but one of these: 
   - empty
   - `<img src="/portlet_mensaplan/public/images/vegetarisch.gif">` (vegetarian/vegan)
   - `<img src="/portlet_mensaplan/public/images/fisch.gif">` (fish/seafood)
@@ -103,7 +111,7 @@ Explanation:
   Keine Speisen vorhanden. Bitte beachten Sie die Öffnungszeiten. Mittagsgerichte werden nur bis 14:15 angezeigt.
 </div>
 ```
-(It just says: "No meals available. Please note the opening hours. Lunch will only be shown until 14:15.".)
+(It just says: "No dishes available. Please note the opening hours. Lunch will only be shown until 14:15.".)
 
 ### Sample Calls
 
