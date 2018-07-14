@@ -2,8 +2,9 @@
 
 This project aims to document and open up the API for the canteens at the University of Göttingen, Germany.
 
-- [ ] Document the official API* to get dishes for all canteens in Göttingen.
-- [ ] Create a Node.js wrapper around the API that returns proper JSON data.
+- [x] Document the official API* (`origin API`, see [Terms](#terms)) to get dishes for all canteens in Göttingen.
+- [ ] Define a new API that wraps around the origin API
+- [ ] Create a Node.js wrapper that returns proper JSON data to implement the new API.
 - [ ] Make it available as a npm package.
 
 This is a supplementary project to my upcoming Göttingen Mensa Telegram bot.
@@ -90,7 +91,7 @@ Explanation:
 - `{price}` is the price in Euro with a comma as a decimal point.
 - `{price_type}` is one of `Studenten` (students), `Mitarbeiter` (employees), `Gäste` (guests).
 - `{dish_title}` is the name of the dish (can be empty, e.g. for deserts).
-- `{dish_additives}` is a comma separated list of food additives (see further below for more information).
+- `{dish_additives}` is a comma separated list of food additives (see [below](#possible-additives) for more information).
 - `{dish_description}` is the description and possible side dishes (sometimes with comma-separated additives in brackets). The side dishes are mostly separated by commas, but sometimes with an `oder` (or) for example if you can choose between different sauces.
 - `{dish_image}` is not an actual image of the meal, but one of these: 
   - empty
@@ -152,3 +153,6 @@ Taken from the bottom of https://www.studentenwerk-goettingen.de/speiseplan.html
 - `m` Lupinen und daraus gewonnene Erzeugnisse
 - `n` Weichtiere und daraus gewonnene Erzeugnisse
 
+## API Documentation
+
+TODO
