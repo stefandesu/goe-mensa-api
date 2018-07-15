@@ -3,7 +3,7 @@
 This project aims to document and open up the API for the canteens at the University of Göttingen, Germany.
 
 - [x] Document the official API* (`origin API`, see [Terms](#terms)) to get dishes for all canteens in Göttingen.
-- [ ] Define a new API that wraps around the origin API
+- [x] Define a new API that wraps around the origin API
 - [ ] Create a Node.js wrapper that returns proper JSON data to implement the new API.
 - [ ] Make it available as a npm package.
 
@@ -155,4 +155,105 @@ Taken from the bottom of https://www.studentenwerk-goettingen.de/speiseplan.html
 
 ## API Documentation
 
-TODO
+In order to work with the data more easily, we are defining and creating a JSON API around the origin API.
+
+### Canteens / Mensen
+
+- Endpoint: `/mensen`
+- Method: `GET`
+- Params: None
+- Content-Type: `application/json`
+- Content: An array of mensa objects like
+  
+  ```json
+  { _id: "Zentralmensa" }
+  ```
+
+### Categories
+
+- Endpoint: `/categories`
+- Method: `GET`
+- Params: `mensa` (id of mensa)
+- Content-Type: `application/json`
+- Content: An array of category objects like
+
+  ```json
+  {
+    mensa: "Zentralmensa",
+    _id: "menu1",
+    labels: ["Menü 1"],
+    type: "main",
+    order: 0
+  }
+  ```
+- Explanation:
+  
+  `mensa` is the id of the mensa
+  
+  `_id` is a unique identifier for this category
+  
+  `labels` is an array of labels because sometimes one category can have slightly different labels
+  
+  `type` is one of `main`, `other` (might add more later)
+  
+  `order` is the order in which to show the categories (needs to be hardcoded)
+  
+### Dishes
+
+- Endpoint: `/dishes`
+- Method: `GET`
+- Params: `date` (optional, in `YYYY-MM-DD`), `mensa` (optional, id of mensa), `category` (optional, id of category)
+- Content-Type: `application/json`
+- Content: An array of dish objects like
+  
+  ```json
+  {
+    mensa: "Zentralmensa",
+    category: "menu1",
+    _id: "grc583y5vovnlwanmvt",
+    prices: {
+      student: 2.5,
+      employee: 4.0,
+      guest: 5.0
+    },
+    title: {
+      de: "Deutscher Titel",
+      en: "English title if available"
+    },
+    additives: ["3", "i"],
+    description: {
+      de: "Deutsche Beschreibung bzw. Beilagen",
+      en: "English description and side dishes if available"
+    },
+    type: "meat"
+  }
+  ```
+- Explanation:
+
+  `mensa` is the id of the mensa
+  
+  `category` is the id of the category
+  
+  `_id` is a random string
+  
+  `additives` is a list of additive identifiers (see below)
+  
+  `type` is one of `meat`, `fish`, `vegetarian`, or empty
+  
+### Additives
+
+- Endpoint: `/additives`
+- Method: `GET`
+- Params: `id` (optional, id of the additive), `ids` (optional, comma separated list of additive ids)
+- Content-Type: `application/json`
+- Content: An array of additive objects like
+
+  ```json
+  {
+    _id: "a",
+    title: {
+      de: "Glutenhaltiges Getreide",
+      en: "contain gluten"
+    }
+  }
+  ```
