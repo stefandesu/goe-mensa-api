@@ -166,8 +166,14 @@ In order to work with the data more easily, we are defining and creating a JSON 
 - Content: An array of mensa objects like
   
   ```json
-  { "_id": "Zentralmensa" }
+  { 
+    "_id": "Zentralmensa",
+    "order": 0
+  }
   ```
+- Explanation:
+
+  `order` is the order in which to show the canteens (needs to be hardcoded)
 
 ### Categories
 
