@@ -166,7 +166,7 @@ In order to work with the data more easily, we are defining and creating a JSON 
 - Content: An array of mensa objects like
   
   ```json
-  { _id: "Zentralmensa" }
+  { "_id": "Zentralmensa" }
   ```
 
 ### Categories
@@ -179,11 +179,11 @@ In order to work with the data more easily, we are defining and creating a JSON 
 
   ```json
   {
-    mensa: "Zentralmensa",
-    _id: "menu1",
-    labels: ["Menü 1"],
-    type: "main",
-    order: 0
+    "mensa": "Zentralmensa",
+    "_id": "menu1",
+    "labels": ["Menü 1"],
+    "type": "main",
+    "order": 0
   }
   ```
 - Explanation:
@@ -208,24 +208,24 @@ In order to work with the data more easily, we are defining and creating a JSON 
   
   ```json
   {
-    mensa: "Zentralmensa",
-    category: "menu1",
-    _id: "grc583y5vovnlwanmvt",
-    prices: {
-      student: 2.5,
-      employee: 4.0,
-      guest: 5.0
+    "mensa": "Zentralmensa",
+    "category": "menu1",
+    "_id": "grc583y5vovnlwanmvt",
+    "prices": {
+      "student": 2.5,
+      "employee": 4.0,
+      "guest": 5.0
     },
-    title: {
-      de: "Deutscher Titel",
-      en: "English title if available"
+    "title": {
+      "de": "Deutscher Titel",
+      "en": "English title if available"
     },
-    additives: ["3", "i"],
-    description: {
-      de: "Deutsche Beschreibung bzw. Beilagen",
-      en: "English description and side dishes if available"
+    "additives": ["3", "i"],
+    "description": {
+      "de": "Deutsche Beschreibung bzw. Beilagen",
+      "en": "English description and side dishes if available"
     },
-    type: "meat"
+    "type": "meat"
   }
   ```
 - Explanation:
@@ -250,10 +250,10 @@ In order to work with the data more easily, we are defining and creating a JSON 
 
   ```json
   {
-    _id: "a",
-    title: {
-      de: "Glutenhaltiges Getreide",
-      en: "contain gluten"
+    "_id": "a",
+    "title": {
+      "de": "Glutenhaltiges Getreide",
+      "en": "contain gluten"
     }
   }
   ```
