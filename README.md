@@ -120,38 +120,38 @@ Explanation:
 
 ### Possible Additives
 
-Taken from the bottom of https://www.studentenwerk-goettingen.de/speiseplan.html (TODO: translation):
+Taken from the bottom of https://www.studentenwerk-goettingen.de/speiseplan.html (German) and https://www.studentenwerk-goettingen.de/1/speiseplan.html (English):
 
 **Additives:**
 
-- `1` mit Konservierungsstoff
-- `2` mit Farbstoff
-- `3` mit Antioxidationsmittel
-- `4` mit Geschmacksverstärker
-- `5` geschwefelt
-- `6` geschwärzt
-- `7` gewachst
-- `8` mit Phosphat
-- `9` mit Süßungsmittel
-- `10` enthält eine Phenylalaninquelle
-- `11` mit kakaohaltiger Fettglasur
+- `1` mit Konservierungsstoff / with preservative
+- `2` mit Farbstoff / with couloring
+- `3` mit Antioxidationsmittel / with antioxidant
+- `4` mit Geschmacksverstärker / with flavour enhancer
+- `5` geschwefelt / sulphurated
+- `6` geschwärzt / blackened
+- `7` gewachst / waxed
+- `8` mit Phosphat / with phosphate
+- `9` mit Süßungsmittel / sweetener/s
+- `10` enthält eine Phenylalaninquelle / contains phenylalanin source
+- `11` mit kakaohaltiger Fettglasur / with cocoa based coating
 
 **Allergens:**
 
-- `a` Glutenhaltiges Getreide
-- `b` Krebstiere und daraus gewonnene Erzeugnisse
-- `c` Eier und daraus gewonnene Erzeugnisse
-- `d` Fische und daraus gewonnene Erzeugnisse
-- `e` Erdnüsse und daraus gewonnene Erzeugnisse
-- `f` Soja(bohnen) und daraus gewonnene Erzeugnisse
-- `g` Milch und daraus gewonnene Erzeugnisse
-- `h` Schalenfrüchte
-- `i` Sellerie und daraus gewonnene Erzeugnisse
-- `j` Senf und daraus gewonnene Erzeugnisse
-- `k` Sesamsamen und daraus gewonnene Erzeugnisse
-- `l` Schwefeldioxid und Sulphite
-- `m` Lupinen und daraus gewonnene Erzeugnisse
-- `n` Weichtiere und daraus gewonnene Erzeugnisse
+- `a` Glutenhaltiges Getreide / contain gluten
+- `b` Krebstiere und daraus gewonnene Erzeugnisse / crustaceans and derived products
+- `c` Eier und daraus gewonnene Erzeugnisse / eggs and derived products
+- `d` Fische und daraus gewonnene Erzeugnisse / fish and derived products
+- `e` Erdnüsse und daraus gewonnene Erzeugnisse / peanuts and derived products
+- `f` Soja(bohnen) und daraus gewonnene Erzeugnisse / soybeans and derived products
+- `g` Milch und daraus gewonnene Erzeugnisse / milk and derived products (including lactose)
+- `h` Schalenfrüchte / edible nuts
+- `i` Sellerie und daraus gewonnene Erzeugnisse / celery and derived products
+- `j` Senf und daraus gewonnene Erzeugnisse / mustard and derived products
+- `k` Sesamsamen und daraus gewonnene Erzeugnisse / sesame seeds and derived products
+- `l` Schwefeldioxid und Sulphite / sulfur dioxid and sulphites
+- `m` Lupinen und daraus gewonnene Erzeugnisse / lupines and derived products
+- `n` Weichtiere und daraus gewonnene Erzeugnisse / molluscs and derived products
 
 ## API Documentation
 
