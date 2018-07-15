@@ -11,6 +11,37 @@ This is a supplementary project to my upcoming Göttingen Mensa Telegram bot.
 
 \* Unfortunately, there is no officially advertised API, but if you know where to look, you can find an API that returns a preformatted HTML table that can be parsed systematically.
 
+## JSON API Installation
+
+To install and run the JSON API on your own device, you'll need a MongoDB server and Node.js.
+
+```bash
+# Clone repository
+git clone https://github.com/stefandesu/goe-mensa-api.git
+cd goe-mensa-api
+
+# Install dependencies
+npm install
+
+# Create .env file
+touch .env
+# See below for more info on the .env file
+
+# Run the dev server
+npm run dev
+```
+
+`.env` example file (for defaults see `server.js`):
+
+```
+MONGO_URL=localhost
+MONGO_DB=goe-mensa-api
+MONGO_PORT=27017
+MONGO_USER=mongoadmin
+MONGO_PASS=mongopass
+PORT=8123
+```
+
 ## Terms
 To avoid confusion (especially for myself), I'll define some terms here.
 
