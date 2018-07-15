@@ -174,6 +174,7 @@ In order to work with the data more easily, we are defining and creating a JSON 
 - Explanation:
 
   `order` is the order in which to show the canteens (needs to be hardcoded)
+- Manually compiled data can be found in `data/mensen.json`.
 
 ### Categories
 
@@ -203,6 +204,7 @@ In order to work with the data more easily, we are defining and creating a JSON 
   `type` is one of `main`, `other` (might add more later)
   
   `order` is the order in which to show the categories (needs to be hardcoded)
+- Manually compiled data can be found in `data/categories.json` (not complete yet).
   
 ### Dishes
 
@@ -263,3 +265,4 @@ In order to work with the data more easily, we are defining and creating a JSON 
     }
   }
   ```
+- Manually compiled data can be found in `data/additives.json`.

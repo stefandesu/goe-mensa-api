@@ -1,0 +1,121 @@
+[
+  {
+    "mensa": "Zentralmensa",
+    "_id": "z_eintopf",
+    "labels": ["Eintopf"],
+    "type": "main",
+    "order": 0
+  },
+  {
+    "mensa": "Zentralmensa",
+    "_id": "z_menu1",
+    "labels": ["Menü I"],
+    "type": "main",
+    "order": 1
+  },
+  {
+    "mensa": "Zentralmensa",
+    "_id": "z_menu2",
+    "labels": ["Menü II"],
+    "type": "main",
+    "order": 2
+  },
+  {
+    "mensa": "Zentralmensa",
+    "_id": "z_vegetarisch",
+    "labels": ["Vegetarisch"],
+    "type": "main",
+    "order": 3
+  },
+  {
+    "mensa": "Zentralmensa",
+    "_id": "z_vegan",
+    "labels": ["Vegan"],
+    "type": "main",
+    "order": 4
+  },
+  {
+    "mensa": "Zentralmensa",
+    "_id": "z_grill1",
+    "labels": ["Grillgericht I"],
+    "type": "main",
+    "order": 5
+  },
+  {
+    "mensa": "Zentralmensa",
+    "_id": "z_grill2",
+    "labels": ["Grillgericht II"],
+    "type": "main",
+    "order": 6
+  },
+  {
+    "mensa": "Zentralmensa",
+    "_id": "z_grill3",
+    "labels": ["Grillgericht III"],
+    "type": "main",
+    "order": 7
+  },
+  {
+    "mensa": "Zentralmensa",
+    "_id": "z_campuscurry",
+    "labels": ["CampusCurry"],
+    "type": "main",
+    "order": 8
+  },
+  {
+    "mensa": "Zentralmensa",
+    "_id": "z_naturlichfit",
+    "labels": ["natürlich fit"],
+    "type": "main",
+    "order": 9
+  },
+  {
+    "mensa": "Zentralmensa",
+    "_id": "z_aldente",
+    "labels": ["Al dente"],
+    "type": "main",
+    "order": 10
+  },
+  {
+    "mensa": "Mensa am Turm",
+    "_id": "t_eintopf",
+    "labels": ["Eintopf"],
+    "type": "main",
+    "order": 0
+  },
+  {
+    "mensa": "Mensa am Turm",
+    "_id": "t_vegetarisch",
+    "labels": ["Turm vegetarisch", "Turm vegetarisch Kombi"],
+    "type": "main",
+    "order": 1
+  },
+  {
+    "mensa": "Mensa am Turm",
+    "_id": "t_vegan",
+    "labels": ["Turm Vegan", "Turm Vegan Kombi"],
+    "type": "main",
+    "order": 2
+  },
+  {
+    "mensa": "Mensa am Turm",
+    "_id": "t_turm2b",
+    "labels": ["Turm 2b"],
+    "type": "main",
+    "order": 3
+  },
+  {
+    "mensa": "Mensa am Turm",
+    "_id": "t_turm3a",
+    "labels": ["Turm 3a"],
+    "type": "main",
+    "order": 4
+  },
+  {
+    "mensa": "Mensa am Turm",
+    "_id": "t_regionalelinie",
+    "labels": ["Regionale Linie"],
+    "type": "main",
+    "order": 5
+  }
+]

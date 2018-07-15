@@ -1,0 +1,177 @@
+[
+  {
+    "_id": "1",
+    "title": {
+      "de": "mit Konservierungsstoff",
+      "en": "with preservative"
+    }
+  },
+  {
+    "_id": "2",
+    "title": {
+      "de": "mit Farbstoff",
+      "en": "with couloring"
+    }
+  },
+  {
+    "_id": "3",
+    "title": {
+      "de": "mit Antioxidationsmittel",
+      "en": "with antioxidant"
+    }
+  },
+  {
+    "_id": "4",
+    "title": {
+      "de": "mit Geschmacksverstärker",
+      "en": "with flavour enhancer"
+    }
+  },
+  {
+    "_id": "5",
+    "title": {
+      "de": "geschwefelt",
+      "en": "sulphurated"
+    }
+  },
+  {
+    "_id": "6",
+    "title": {
+      "de": "geschwärzt",
+      "en": "blackened"
+    }
+  },
+  {
+    "_id": "7",
+    "title": {
+      "de": "gewachst",
+      "en": "waxed"
+    }
+  },
+  {
+    "_id": "8",
+    "title": {
+      "de": "mit Phosphat",
+      "en": "with phosphate"
+    }
+  },
+  {
+    "_id": "9",
+    "title": {
+      "de": "mit Süßungsmittel",
+      "en": "sweetener/s"
+    }
+  },
+  {
+    "_id": "10",
+    "title": {
+      "de": "enthält eine Phenylalaninquelle",
+      "en": "contains phenylalanin source"
+    }
+  },
+  {
+    "_id": "11",
+    "title": {
+      "de": "mit kakaohaltiger Fettglasur",
+      "en": "with cocoa based coating"
+    }
+  },
+  {
+    "_id": "a",
+    "title": {
+      "de": "Glutenhaltiges Getreide",
+      "en": "contain gluten"
+    }
+  },
+  {
+    "_id": "b",
+    "title": {
+      "de": "Krebstiere und daraus gewonnene Erzeugnisse",
+      "en": "crustaceans and derived products"
+    }
+  },
+  {
+    "_id": "c",
+    "title": {
+      "de": "Eier und daraus gewonnene Erzeugnisse",
+      "en": "eggs and derived products"
+    }
+  },
+  {
+    "_id": "d",
+    "title": {
+      "de": "Fische und daraus gewonnene Erzeugnisse",
+      "en": "fish and derived products"
+    }
+  },
+  {
+    "_id": "e",
+    "title": {
+      "de": "Erdnüsse und daraus gewonnene Erzeugnisse",
+      "en": "peanuts and derived products"
+    }
+  },
+  {
+    "_id": "f",
+    "title": {
+      "de": "Soja(bohnen) und daraus gewonnene Erzeugnisse",
+      "en": "soybeans and derived products"
+    }
+  },
+  {
+    "_id": "g",
+    "title": {
+      "de": "Milch und daraus gewonnene Erzeugnisse",
+      "en": "milk and derived products (including lactose)"
+    }
+  },
+  {
+    "_id": "h",
+    "title": {
+      "de": "Schalenfrüchte",
+      "en": "edible nuts"
+    }
+  },
+  {
+    "_id": "i",
+    "title": {
+      "de": "Sellerie und daraus gewonnene Erzeugnisse",
+      "en": "celery and derived products"
+    }
+  },
+  {
+    "_id": "j",
+    "title": {
+      "de": "Senf und daraus gewonnene Erzeugnisse",
+      "en": "mustard and derived products"
+    }
+  },
+  {
+    "_id": "k",
+    "title": {
+      "de": "Sesamsamen und daraus gewonnene Erzeugnisse",
+      "en": "sesame seeds and derived products"
+    }
+  },
+  {
+    "_id": "l",
+    "title": {
+      "de": "Schwefeldioxid und Sulphite",
+      "en": "sulfur dioxid and sulphites"
+    }
+  },
+  {
+    "_id": "m",
+    "title": {
+      "de": "Lupinen und daraus gewonnene Erzeugnisse",
+      "en": "lupines and derived products"
+    }
+  },
+  {
+    "_id": "n",
+    "title": {
+      "de": "Weichtiere und daraus gewonnene Erzeugnisse",
+      "en": "molluscs and derived products"
+    }
+  }
+]

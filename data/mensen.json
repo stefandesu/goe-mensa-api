@@ -1,0 +1,22 @@
+[
+  {
+    "_id": "Zentralmensa",
+    "order": 0
+  },
+  {
+    "_id": "Mensa am Turm",
+    "order": 1
+  },
+  {
+    "_id": "Nordmensa",
+    "order": 2
+  },
+  {
+    "_id": "Mensa Italia",
+    "order": 3
+  },
+  {
+    "_id": "Bistro HAWK",
+    "order": 4
+  }
+]
