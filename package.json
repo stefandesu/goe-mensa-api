@@ -1,0 +1,29 @@
+{
+  "name": "goe-mensa-api",
+  "version": "0.1.0",
+  "description": "This project aims to document and open up the API for the canteens at the University of Göttingen, Germany.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stefandesu/goe-mensa-api.git"
+  },
+  "author": "Stefan Peters",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/stefandesu/goe-mensa-api/issues"
+  },
+  "homepage": "https://github.com/stefandesu/goe-mensa-api#readme",
+  "dependencies": {
+    "dotenv": "^6.0.0",
+    "express": "^4.16.3",
+    "mongodb": "^3.1.1"
+  },
+  "devDependencies": {
+    "eslint": "^5.1.0",
+    "nodemon": "^1.18.2"
+  }
+}
