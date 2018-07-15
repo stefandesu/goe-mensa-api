@@ -3,8 +3,8 @@
 This project aims to document and open up the API for the canteens at the University of Göttingen, Germany.
 
 - [x] Document the official API* (`origin API`, see [Terms](#terms)) to get dishes for all canteens in Göttingen.
-- [x] Define a new API that wraps around the origin API
-- [ ] Create a Node.js wrapper that returns proper JSON data to implement the new API.
+- [x] Define a new JSON API that wraps around the origin API
+- [ ] Create a Node.js wrapper to implement the JSON API.
 - [ ] Make it available as a npm package.
 
 This is a supplementary project to my upcoming Göttingen Mensa Telegram bot.
@@ -17,7 +17,7 @@ To avoid confusion (especially for myself), I'll define some terms here.
 - `mensa` (plural `mensen`) = canteen(s) (I believe even most English speaking students in Göttingen use mensa/mensen and it feels way more natural)
 - `dish`, `dishes` (also `side dishes`) (these are called `Gerichte` in the origin API)
 - `origin API` = the "official" API
-- `API` = the newly defined API wrapper
+- `JSON API` = the newly defined JSON API wrapper
 
 ## Origin API Documentation
 
@@ -153,7 +153,7 @@ Taken from the bottom of https://www.studentenwerk-goettingen.de/speiseplan.html
 - `m` Lupinen und daraus gewonnene Erzeugnisse / lupines and derived products
 - `n` Weichtiere und daraus gewonnene Erzeugnisse / molluscs and derived products
 
-## API Documentation
+## JSON API Documentation
 
 In order to work with the data more easily, we are defining and creating a JSON API around the origin API.
 
