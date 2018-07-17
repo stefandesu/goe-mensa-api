@@ -124,7 +124,7 @@ Explanation:
 - `{dish_title}` is the name of the dish (can be empty, e.g. for deserts).
 - `{dish_additives}` is a comma separated list of food additives (see [below](#possible-additives) for more information).
 - `{dish_description}` is the description and possible side dishes (sometimes with comma-separated additives in brackets). The side dishes are mostly separated by commas, but sometimes with an `oder` (or) for example if you can choose between different sauces.
-- `{dish_image}` is not an actual image of the meal, but one of these: 
+- `{dish_image}` is not an actual image of the meal, but one of these:
   - empty
   - `<img src="/portlet_mensaplan/public/images/vegetarisch.gif">` (vegetarian/vegan)
   - `<img src="/portlet_mensaplan/public/images/fisch.gif">` (fish/seafood)
@@ -195,9 +195,9 @@ In order to work with the data more easily, we are defining and creating a JSON 
 - Params: None
 - Content-Type: `application/json`
 - Content: An array of mensa objects like
-  
+
   ```json
-  { 
+  {
     "_id": "Zentralmensa",
     "order": 0
   }
@@ -225,18 +225,18 @@ In order to work with the data more easily, we are defining and creating a JSON 
   }
   ```
 - Explanation:
-  
+
   `mensa` is the id of the mensa
-  
+
   `_id` is a unique identifier for this category
-  
+
   `labels` is an array of labels because sometimes one category can have slightly different labels
-  
+
   `type` is one of `main`, `other` (might add more later)
-  
+
   `order` is the order in which to show the categories (needs to be hardcoded)
 - Manually compiled data can be found in `data/categories.json` (not complete yet).
-  
+
 ### Dishes
 
 - Endpoint: `/dishes`
@@ -244,7 +244,7 @@ In order to work with the data more easily, we are defining and creating a JSON 
 - Params: `date` (optional, in `YYYY-MM-DD`), `mensa` (optional, id of mensa), `category` (optional, id of category)
 - Content-Type: `application/json`
 - Content: An array of dish objects like
-  
+
   ```json
   {
     "mensa": "Zentralmensa",
@@ -270,20 +270,20 @@ In order to work with the data more easily, we are defining and creating a JSON 
 - Explanation:
 
   `mensa` is the id of the mensa
-  
+
   `category` is the id of the category
-  
+
   `_id` is a random string
-  
+
   `additives` is a list of additive identifiers (see below)
-  
+
   `type` is one of `meat`, `fish`, `vegetarian`, or empty
-  
+
 ### Additives
 
 - Endpoint: `/additives`
 - Method: `GET`
-- Params: `id` (optional, id of the additive), `ids` (optional, comma separated list of additive ids)
+- Params: `ids` (optional, comma separated list of additive ids)
 - Content-Type: `application/json`
 - Content: An array of additive objects like
 
