@@ -1,6 +1,8 @@
 const express = require("express")
 const mongoClient = require("mongodb").MongoClient
 const app = express()
+// const schedule = require("node-schedule")
+const originApi = require("./lib/origin-api")
 require("dotenv").config()
 
 const
@@ -27,4 +29,9 @@ mongoClient.connect(mongoConnectUrl, (error, database) => {
   app.listen(port, () => {
     console.log("Server is running on port", port)
   })
+  // Schedule loading mensa data from origin API
+  originApi.loadDishes(db)
+  // schedule.scheduleJob("*/20 * * * * *", () => {
+  //   originApi.loadDishes(db)
+  // })
 })
