@@ -250,6 +250,7 @@ In order to work with the data more easily, we are defining and creating a JSON 
     "mensa": "Zentralmensa",
     "category": "menu1",
     "_id": "grc583y5vovnlwanmvt",
+    "date": "2018-07-18",
     "prices": {
       "student": 2.5,
       "employee": 4.0,
@@ -274,6 +275,8 @@ In order to work with the data more easily, we are defining and creating a JSON 
   `category` is the id of the category
 
   `_id` is a random string
+
+  `date` is the date for this dishes entry
 
   `additives` is a list of additive identifiers (see below)
 
