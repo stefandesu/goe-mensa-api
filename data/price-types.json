@@ -1,0 +1,23 @@
+[
+  {
+    "_id": "stu",
+    "title": {
+      "de": "Student",
+      "en": "student"
+    }
+  },
+  {
+    "_id": "mit",
+    "title": {
+      "de": "Mitarbeiter",
+      "en": "employee"
+    }
+  },
+  {
+    "_id": "gas",
+    "title": {
+      "de": "Gast",
+      "en": "guest"
+    }
+  }
+]

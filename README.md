@@ -297,3 +297,20 @@ In order to work with the data more easily, we are defining and creating a JSON 
   }
   ```
 - Manually compiled data can be found in `data/additives.json`.
+
+### Price Types
+
+- Endpoint: `/priceTypes`
+- Method: `GET`
+- Params: None
+- Content-Type: `application/json`
+- Content: An array of price types like
+
+  ```json
+  {
+    "_id": "mit",
+    "title": {
+      "de": "Mitarbeiter",
+      "en": "employee"
+    }
+  }
