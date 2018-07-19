@@ -188,6 +188,8 @@ Taken from the bottom of https://www.studentenwerk-goettingen.de/speiseplan.html
 
 In order to work with the data more easily, we are defining and creating a JSON API around the origin API.
 
+The JSON API is now running on https://mensa.exo.pm/api/. It does not include any dish data yet.
+
 ### Canteens / Mensen
 
 - Endpoint: `/mensen`
