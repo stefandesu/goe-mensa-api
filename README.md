@@ -4,7 +4,9 @@ This project aims to document and open up the API for the canteens at the Univer
 
 - [x] Document the official API* (`origin API`, see [Terms](#terms)) to get dishes for all canteens in Göttingen.
 - [x] Define a new JSON API that wraps around the origin API
-- [ ] Create a Node.js wrapper to implement the JSON API.
+- [x] Create a Node.js wrapper to implement the JSON API.
+- [ ] Integrate English labels into data.
+- [ ] Add unit tests.
 - [ ] Make it available as a npm package.
 
 This is a supplementary project to my upcoming Göttingen Mensa Telegram bot.
@@ -67,7 +69,7 @@ You can modify the response by adding `GET` parameters.
 
 All other parameters are optional:
 
-- `tag` (day). Has to be one of `heute` (today), `morgen` (tomorrow), `uebermorgen` (day after tomorrow). Defaults to `heute`. If the next day is a Sunday, `morgen` returns meals for Monday. There might be more options as the official website can show dishes for the current and next week.
+- `tag` (day). Has to be one of `heute` (today), `morgen` (tomorrow), `uebermorgen` (day after tomorrow). Defaults to `heute`. For `morgen` and `uebermorgen`, if there is a Sunday in between, it'll be skipped in the date calculating, e.g. on Saturday, `uebermorgen` will return data for Tuesday. There might be more options as the official website can show dishes for the current and next week.
 - `preis` (price). Has to be one of `stu` (student), `mit` (employee), `gas` (guest). Defaults to `stu`.
 
 The following parameters can all have the values `true` or `false`. All default to `true`:
@@ -188,7 +190,7 @@ Taken from the bottom of https://www.studentenwerk-goettingen.de/speiseplan.html
 
 In order to work with the data more easily, we are defining and creating a JSON API around the origin API.
 
-The JSON API is now running on https://mensa.exo.pm/api/. Currently, it'll try to load dishes data each morning for the day after next. Also note that the categories are still incomplete. If you'd like to help complete them, feel free to PR.
+The JSON API is now running on https://mensa.exo.pm/api/. Currently, it'll try to load dishes data each morning for the day after next. Also note that the categories are still incomplete. If you'd like to help complete them, feel free to PR (see file `data/categories.json`).
 
 ### Canteens / Mensen
 
@@ -237,7 +239,7 @@ The JSON API is now running on https://mensa.exo.pm/api/. Currently, it'll try t
   `type` is one of `main`, `other` (might add more later)
 
   `order` is the order in which to show the categories (needs to be hardcoded)
-- Manually compiled data can be found in `data/categories.json` (not complete yet).
+- Manually compiled data can be found in `data/categories.json` (not complete yet, feel free to help).
 
 ### Dishes
 
