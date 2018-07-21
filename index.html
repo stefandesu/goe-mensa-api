@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>goe-mensa-api</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style type="text/css">
+    body {
+      margin: 20px;
+    }
+    a:link, a:visited {
+      text-decoration: none;
+      color: rgb(96, 143, 219);
+    }
+    a:hover, a:active {
+      text-decoration: underline;
+    }
+    </style>
+  </head>
+  <body>
+    <h1>Göttingen Mensa API</h1>
+    <h2>Documentation</h2>
+    <p>
+      Visit the project on <a href="https://github.com/stefandesu/goe-mensa-api" target="_blank">GitHub</a> for the full documentation.
+    </p>
+    <h2>Endpoints</h2>
+    <ul>
+      <li>GET <a href="mensen">/mensen</a> - returns a list of mensen/canteens</li>
+      <li>GET <a href="categories">/categories</a> - returns a list of dish categories (parameters: mensa)</li>
+      <li>GET <a href="dishes">/dishes</a> - returns a list of dishes (parameters: date, mensa, category)</li>
+      <li>GET <a href="additives">/additives</a> - returns a list of additives (parameters: ids)</li>
+      <li>GET <a href="priceTypes">/priceTypes</a> - returns a list of price types</li>
+    </ul>
+  </body>
+</html>
