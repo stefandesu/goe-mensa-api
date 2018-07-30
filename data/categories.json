@@ -36,45 +36,31 @@
   },
   {
     "mensa": "Zentralmensa",
-    "_id": "z_grill1",
-    "labels": ["Grillgericht I"],
+    "_id": "z_grill",
+    "labels": ["Grillgericht", "Grillgericht I", "Grillgericht II", "Grillgericht III"],
     "type": "main",
     "order": 5
-  },
-  {
-    "mensa": "Zentralmensa",
-    "_id": "z_grill2",
-    "labels": ["Grillgericht II"],
-    "type": "main",
-    "order": 6
-  },
-  {
-    "mensa": "Zentralmensa",
-    "_id": "z_grill3",
-    "labels": ["Grillgericht III"],
-    "type": "main",
-    "order": 7
   },
   {
     "mensa": "Zentralmensa",
     "_id": "z_campuscurry",
     "labels": ["CampusCurry"],
     "type": "main",
-    "order": 8
+    "order": 6
   },
   {
     "mensa": "Zentralmensa",
     "_id": "z_naturlichfit",
     "labels": ["natürlich fit"],
     "type": "main",
-    "order": 9
+    "order": 7
   },
   {
     "mensa": "Zentralmensa",
     "_id": "z_aldente",
     "labels": ["Al dente"],
     "type": "main",
-    "order": 10
+    "order": 8
   },
   {
     "mensa": "Mensa am Turm",
