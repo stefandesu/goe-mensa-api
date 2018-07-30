@@ -37,7 +37,7 @@
   {
     "mensa": "Zentralmensa",
     "_id": "z_grill",
-    "labels": ["Grillgericht", "Grillgericht I", "Grillgericht II", "Grillgericht III"],
+    "labels": ["Grillgericht", "Grillgericht I", "Grillgericht II", "Grillgericht III", "Grill I", "Grill II", "Grill III"],
     "type": "main",
     "order": 5
   },
