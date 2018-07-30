@@ -117,5 +117,74 @@
     "labels": ["Regionale Linie"],
     "type": "main",
     "order": 5
+  },
+  {
+    "mensa": "Nordmensa",
+    "_id": "n_stamm1",
+    "labels": ["Stamm 1 vegetarisch", "Stamm 1", "Stamm 1 vegan"],
+    "type": "main",
+    "order": 1
+  },
+  {
+    "mensa": "Nordmensa",
+    "_id": "n_stamm2",
+    "labels": ["Stamm 2", "Stamm 2 vegetarisch", "Stamm 2 vegan"],
+    "type": "main",
+    "order": 2
+  },
+  {
+    "mensa": "Nordmensa",
+    "_id": "n_fit",
+    "labels": ["Nordmensa-Fit"],
+    "type": "main",
+    "order": 3
+  },
+  {
+    "mensa": "Nordmensa",
+    "_id": "n_grillfest_bratwurst",
+    "labels": ["Grillfest: Bratwurst"],
+    "type": "main",
+    "order": 10,
+    "hide": true
+  },
+  {
+    "mensa": "Nordmensa",
+    "_id": "n_grillfest_krakauer",
+    "labels": ["Grillfest: Krakauer"],
+    "type": "main",
+    "order": 11,
+    "hide": true
+  },
+  {
+    "mensa": "Nordmensa",
+    "_id": "n_grillfest_putensteak",
+    "labels": ["Grillfest: Putensteak"],
+    "type": "main",
+    "order": 12,
+    "hide": true
+  },
+  {
+    "mensa": "Nordmensa",
+    "_id": "n_grillfest_schweinesteak",
+    "labels": ["Grillfest: Schweinesteak"],
+    "type": "main",
+    "order": 13,
+    "hide": true
+  },
+  {
+    "mensa": "Nordmensa",
+    "_id": "n_grillfest_ofenkartoffel",
+    "labels": ["Grillfest: Ofenkartoffel"],
+    "type": "main",
+    "order": 14,
+    "hide": true
+  },
+  {
+    "mensa": "Nordmensa",
+    "_id": "n_grillfest_bauernsalat",
+    "labels": ["Grillfest: Bauernsalat"],
+    "type": "main",
+    "order": 15,
+    "hide": true
   }
 ]
