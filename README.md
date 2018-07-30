@@ -225,7 +225,8 @@ The JSON API is now running on https://mensa.exo.pm/api/. Currently, it'll try t
     "_id": "menu1",
     "labels": ["Menü 1"],
     "type": "main",
-    "order": 0
+    "order": 0,
+    "hide": false
   }
   ```
 - Explanation:
@@ -239,6 +240,8 @@ The JSON API is now running on https://mensa.exo.pm/api/. Currently, it'll try t
   `type` is one of `main`, `other` (might add more later)
 
   `order` is the order in which to show the categories (needs to be hardcoded)
+
+  `hide` is whether this category should be hidden from subscriptions (optional, default false, up to the client whether to follow this or not)
 - Manually compiled data can be found in `data/categories.json` (not complete yet, feel free to help).
 
 ### Dishes
