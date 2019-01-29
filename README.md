@@ -7,9 +7,9 @@ This project aims to document and open up the API for the canteens at the Univer
 - [x] Document the official API* (`origin API`, see [Terms](#terms)) to get dishes for all canteens in Göttingen.
 - [x] Define a new JSON API that wraps around the origin API
 - [x] Create a Node.js wrapper to implement the JSON API.
-- [ ] Integrate English labels into data.
+- [x] Integrate English labels into data.
 - [ ] Add unit tests.
-- [ ] Make it available as a npm package.
+- [ ] Extract some functionality into a npm package.
 
 This is a supplementary project to my upcoming Göttingen Mensa Telegram bot.
 
