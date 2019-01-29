@@ -120,10 +120,17 @@
   },
   {
     "mensa": "Nordmensa",
+    "_id": "n_stamm3",
+    "labels": ["Stamm 3", "Stamm 3 vegetarisch", "Stamm 3 vegan"],
+    "type": "main",
+    "order": 3
+  },
+  {
+    "mensa": "Nordmensa",
     "_id": "n_fit",
     "labels": ["Nordmensa-Fit"],
     "type": "main",
-    "order": 3
+    "order": 4
   },
   {
     "mensa": "Nordmensa",
