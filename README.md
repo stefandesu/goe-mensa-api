@@ -1,5 +1,7 @@
 # Göttingen Mensa API
 
+[![Uptime Robot status](https://img.shields.io/uptimerobot/status/m780733961-bd63dc951bbeb63695f71a10.svg?label=API)](https://stats.uptimerobot.com/r92k1tjo3)
+
 This project aims to document and open up the API for the canteens at the University of Göttingen, Germany.
 
 - [x] Document the official API* (`origin API`, see [Terms](#terms)) to get dishes for all canteens in Göttingen.
