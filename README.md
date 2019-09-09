@@ -1,6 +1,6 @@
 # Göttingen Mensa API
 
-[![Uptime Robot status](https://img.shields.io/uptimerobot/status/m780733961-bd63dc951bbeb63695f71a10.svg?label=API)](https://stats.uptimerobot.com/r92k1tjo3)
+[![Uptime Robot status](https://img.shields.io/uptimerobot/status/m780733961-bd63dc951bbeb63695f71a10.svg?label=API)](https://stats.uptimerobot.com/r92k1tjo3) [![Greenkeeper badge](https://badges.greenkeeper.io/stefandesu/goe-mensa-api.svg)](https://greenkeeper.io/)
 
 This project aims to document and open up the API for the canteens at the University of Göttingen, Germany.
 
